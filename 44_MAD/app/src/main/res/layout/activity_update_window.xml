@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3AA3A2"
+    tools:context=".UpdateWindow">
+
+    <ImageView
+        android:id="@+id/display_character_imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:contentDescription="Select Character"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/updatetxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/updatetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="Update Contect"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/update_title"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Updated Name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/updatetxt"
+        app:layout_constraintStart_toStartOf="@+id/updatetxt"
+        app:layout_constraintTop_toBottomOf="@+id/updatetxt" />
+
+    <EditText
+        android:id="@+id/update_desc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:hint="Updated Number"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/update_title"
+        app:layout_constraintStart_toStartOf="@+id/update_title"
+        app:layout_constraintTop_toBottomOf="@+id/update_title" />
+
+    <Button
+
+        android:id="@+id/updatebtn_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Update Contact"
+        android:background="#FCDC8B13"
+        android:textColor="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_desc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
